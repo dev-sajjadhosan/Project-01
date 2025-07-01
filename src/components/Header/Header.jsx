@@ -5,8 +5,21 @@ import { Link } from 'react-router-dom'
 const menuArrays = [
   {
     name: 'Trading',
-    path: '/trading',
     icon: '',
+    child: [
+      {
+        name: 'Standard accounts',
+        path: '/standard-accounts',
+      },
+      {
+        name: 'Professional accounts',
+        path: '/professional-accounts',
+      },
+      {
+        name: 'Demo trading account',
+        path: 'demo-trading-account',
+      },
+    ],
   },
   {
     name: 'Markets',
@@ -20,13 +33,43 @@ const menuArrays = [
   },
   {
     name: 'Resources',
-    path: '/resources',
     icon: '',
+    child: [
+      {
+        name: 'Analytical tools',
+        path: '',
+      },
+      {
+        name: 'Economic calendar',
+        path: '',
+      },
+      {
+        name: 'Trading calculator',
+        path: '',
+      },
+      {
+        name: 'Currency converter',
+        path: '',
+      },
+    ],
   },
   {
     name: 'Company',
-    path: '/company',
     icon: '',
+    child: [
+      {
+        name: 'About us',
+        path: '',
+      },
+      {
+        name: 'Why Project',
+        path: '',
+      },
+      {
+        name: 'Contact us',
+        path: '',
+      },
+    ],
   },
   {
     name: 'Partners',
@@ -91,10 +134,16 @@ const Header = () => {
           <ul className="menu menu-horizontal px-1">
             {menuArrays.map((li, i) => (
               <li key={i}>
-                <Link to={li.path}>
-                  {/* {li.icon} */}
-                  {li.name}
-                </Link>
+                <details>
+                  <summary>{li.name}</summary>
+                  <ul className="w-xs p-5 bg-base-300">
+                    {li?.child?.map((cd, j) => (
+                      <li key={j}>
+                        <Link to={cd?.path}>{cd?.name}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
               </li>
             ))}
           </ul>
@@ -103,7 +152,7 @@ const Header = () => {
           <button className="btn btn-sm btn-warning">Register</button>
           <button className="btn btn-sm btn-soft btn-accent">Sign in</button>
           <div className="dropdown dropdown-end">
-            <button tabIndex={0} className="btn btn-sm btn-ghost">
+            <button tabIndex={0} className="btn btn-sm btn-outline">
               {lang}
             </button>
             <div
