@@ -11,7 +11,7 @@ const Footer = () => {
     <div className='p-11'>
       <footer className="card border-t border-gray-500 rounded-none mt-28 pt-13">
         <div className="flex justify-between items-center">
-          <h2 className="text-3xl">Landing Page</h2>
+          <h2 className="text-3xl">Project 01</h2>
         </div>
         <div className="footer flex mt-7 justify-between">
           <nav>
@@ -103,7 +103,7 @@ const Footer = () => {
               <TbBrandYoutube size={17} />
             </button>
           </div>
-          <h2 className="text-md font-light">© 2025 Landing Page</h2>
+          <h2 className="text-md font-light">© 2025 project 01</h2>
         </div>
       </footer>
     </div>

@@ -37,11 +37,11 @@ const menuArrays = [
     child: [
       {
         name: 'Analytical tools',
-        path: '',
+        path: '/analytical-tools',
       },
       {
         name: 'Economic calendar',
-        path: '',
+        path: '/economic-calendar',
       },
       {
         name: 'Trading calculator',
@@ -49,7 +49,7 @@ const menuArrays = [
       },
       {
         name: 'Currency converter',
-        path: '',
+        path: '/currency-converter',
       },
     ],
   },
@@ -59,15 +59,15 @@ const menuArrays = [
     child: [
       {
         name: 'About us',
-        path: '',
+        path: '/about-us',
       },
       {
         name: 'Why Project',
-        path: '',
+        path: '/why-project',
       },
       {
         name: 'Contact us',
-        path: '',
+        path: '/contact-us',
       },
     ],
   },
@@ -113,22 +113,24 @@ const Header = () => {
             >
               <TbMenu4 size={21} />
             </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-            >
-              <li>
-                <a>Homepage</a>
-              </li>
-              <li>
-                <a>Portfolio</a>
-              </li>
-              <li>
-                <a>About</a>
-              </li>
+            <ul className="menu menu-horizontal px-1">
+              {menuArrays.map((li, i) => (
+                <li key={i}>
+                  <details>
+                    <summary>{li.name}</summary>
+                    <ul className="w-xs p-5 bg-base-300">
+                      {li?.child?.map((cd, j) => (
+                        <li key={j}>
+                          <Link to={cd?.path}>{cd?.name}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              ))}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Landing Page</a>
+          <a className="btn btn-ghost text-xl">Project 01</a>
         </div>
         <div className="navbar-center">
           <ul className="menu menu-horizontal px-1">
@@ -149,8 +151,12 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end gap-3">
-          <button className="btn btn-sm btn-warning">Register</button>
-          <button className="btn btn-sm btn-soft btn-accent">Sign in</button>
+          <Link to="/auth/register" className="btn btn-sm btn-warning">
+            Register
+          </Link>
+          <Link to="/auth/login" className="btn btn-sm btn-soft btn-accent">
+            Sign in
+          </Link>
           <div className="dropdown dropdown-end">
             <button tabIndex={0} className="btn btn-sm btn-outline">
               {lang}
