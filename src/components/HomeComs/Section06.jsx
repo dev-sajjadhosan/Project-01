@@ -7,11 +7,13 @@ const Section06 = () => {
         <img
           src={image}
           alt=""
-          className="h-[25rem] object-fill object-center"
+          className="h-[15rem] md:h-[25rem] object-fill object-center"
         />
-        <div className="absolute w-10/12 bg-base-300 p-15 card rounded-2xl items-center -bottom-29">
-          <h2 className="text-3xl">Trade with a trusted broker today</h2>
-          <p className="text-md font-light tracking-wide w-1/2 text-center text-gray-500">
+        <div className="absolute w-11/12 md:w-10/12 bg-base-300 p-9 md:p-15 card rounded-2xl items-center -bottom-29">
+          <h2 className="text-xl md:text-3xl">
+            Trade with a trusted broker today
+          </h2>
+          <p className="text-sm md:text-md font-light tracking-wide md:w-1/2 text-center text-gray-500">
             See for yourself why Exness is the broker of choice for over 1
             million traders and 100,000 partners.
           </p>

@@ -66,7 +66,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <section className="p-27 flex items-center justify-between gap-11">
+      <section className="p-5 mt-27 md:p-27 flex flex-col lg:flex-row items-center justify-between gap-11">
         <img src={image2} alt="" width={500} />
         <div className="card gap-1.5">
           <h2 className="text-2xl">The way is about balance</h2>
@@ -93,16 +93,16 @@ const AboutUs = () => {
         </div>
       </section>
       <div className="mt-27 flex items-center bg-[#070e20] h-[77vh]">
-        <div className="card p-15 ">
+        <div className="card p-5 md:p-15 ">
           <span className="text-3xl">"</span>
-          <h2 className="text-4xl w-1/2">
+          <h2 className="text-4xl lg:w-1/2">
             As a team of financial engineers, we created an environment where
             traders can feel secure and empowered.
           </h2>
         </div>
         <img src="" alt="" />
       </div>
-      <section className="p-27 flex flex-row-reverse items-center justify-between gap-11">
+      <section className="p-5 mt-27 md:p-27 flex flex-col-reverse lg:flex-row-reverse items-center justify-between gap-11">
         <img src={image3} alt="" width={500} />
         <div className="card gap-1.5">
           <h2 className="text-2xl">People first</h2>
@@ -128,7 +128,7 @@ const AboutUs = () => {
           </p>
         </div>
       </section>
-      <section className="mt-27 grid grid-cols-4 gap-9 px-11">
+      <section className="mt-27 grid grid-cols-2 lg:grid-cols-4 gap-9 px-11">
         <div className="flex flex-col gap-1.5 p-9 border-l">
           <h1 className="text-4xl">2000+</h1>
           <p className="text-sm font-light">Employees</p>
@@ -147,7 +147,7 @@ const AboutUs = () => {
         </div>
       </section>
       <section className="mt-27 flex flex-col">
-        <div className="card gap-1.5 w-1/2 items-center text-center mx-auto">
+        <div className="card gap-1.5 lg:w-1/2 items-center text-center mx-auto">
           <h2 className="text-4xl">Our values guide every advancement</h2>
           <p className="text-sm font-light tracking-wide text-gray-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
@@ -156,7 +156,7 @@ const AboutUs = () => {
             error eum quis voluptatem in adipisci nemo similique!
           </p>
         </div>
-        <div className="mt-19 grid grid-cols-2 px-9">
+        <div className="mt-19 grid md:grid-cols-2 px-9">
           <div className="flex flex-col gap-1.5 p-9 border-t">
             <h2 className="text-3xl">Bolb</h2>
             <p className="text-sm font-light tracking-wide text-gray-400">
@@ -165,7 +165,7 @@ const AboutUs = () => {
               invent it. If it does exist, we improve it.
             </p>
           </div>
-          <div className="flex flex-col gap-1.5 p-9 border-t border-x">
+          <div className="flex flex-col gap-1.5 p-9 border-t md:border-x">
             <h2 className="text-3xl">Good people</h2>
             <p className="text-sm font-light tracking-wide text-gray-400">
               We have innovated, pushed boundaries, and challenged the status
@@ -181,7 +181,7 @@ const AboutUs = () => {
               invent it. If it does exist, we improve it.
             </p>
           </div>
-          <div className="flex flex-col gap-1.5 p-9 border-t border-x">
+          <div className="flex flex-col gap-1.5 p-9 border-t md:border-x">
             <h2 className="text-3xl">Reliable</h2>
             <p className="text-sm font-light tracking-wide text-gray-400">
               We have innovated, pushed boundaries, and challenged the status
@@ -191,9 +191,9 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section className="mt-27 px-19 flex flex-col">
+      <section className="mt-27 p-5 md:px-19 flex flex-col">
         <h1 className="text-3xl">Our size makes a big impact</h1>
-        <p className="text-sm font-light tracking-wide text-gray-400 w-3/5 mt-1">
+        <p className="text-sm font-light tracking-wide text-gray-400 lg:w-3/5 mt-1">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
           veritatis dolores, suscipit possimus iure dicta tenetur nobis
           inventore cum laudantium neque error beatae ut nisi ducimus enim,

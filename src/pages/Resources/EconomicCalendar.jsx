@@ -41,7 +41,7 @@ const EconomicCalendar = () => {
   console.log()
   return (
     <>
-      <section className="p-15 flex flex-col">
+      <section className="p-5 md:p-15 flex flex-col">
         <h1 className="text-3xl">Economic Calendar</h1>
         <p className="text-sm font-light tracking-wide md:w-1/2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellat
@@ -99,7 +99,7 @@ const EconomicCalendar = () => {
             </div>
           </div>
         </div>
-        <div className="mt-29 flex gap-11">
+        <div className="mt-29 flex flex-col lg:flex-row gap-11">
           <h2 className="text-4xl">
             Plan your trading with the economic calendar
           </h2>
@@ -154,7 +154,7 @@ const EconomicCalendar = () => {
           </div>
         </div>
         <div className="mt-29 flex flex-col ">
-          <div className="card items-center">
+          <div className="card gap-1 items-center text-center">
             <h2 className="text-3xl">Why Project 01</h2>
             <p className="text-sm font-light tracking-wide text-gray-500">
               Better-than-market conditions, unique features, and cutting-edge
@@ -163,7 +163,7 @@ const EconomicCalendar = () => {
               choose Project 01.
             </p>
           </div>
-          <div className="mt-11 grid grid-cols-3 gap-7">
+          <div className="mt-11 grid md:grid-cols-2 lg:grid-cols-3 gap-7">
             <div className="card gap-1 p-11 bg-base-300">
               <TbArrowBarToDown size={125} />
               <h2 className="text-xl">Instant withdrawals </h2>
@@ -195,7 +195,7 @@ const EconomicCalendar = () => {
             </div>
           </div>
         </div>
-        <div className="mt-29 flex items-start gap-9">
+        <div className="mt-29 flex flex-col lg:flex-row items-start gap-9">
           <h2 className="text-3xl">Frequently asked questions</h2>
           <div className="join join-vertical bg-base-100 w-full">
             {[...Array(9).keys()].map((i) => (

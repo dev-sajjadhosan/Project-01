@@ -12,7 +12,7 @@ const HomePage = () => {
         <div className="flex flex-col justify-between items-center w-full h-10/12">
           <div></div>
           <div className="card justify-center items-center">
-            <h1 className="text-6xl w-3/4 text-center">
+            <h1 className="text-4xl md:text-6xl w-3/4 text-center">
               Upgrade the way you trade
             </h1>
             <p className="text-md mt-1.5 font-light tracking-wide w-3/5 text-center">
@@ -24,7 +24,7 @@ const HomePage = () => {
               <button className="btn btn-outline px-5">Try free demo</button>
             </div>
           </div>
-          <div className="flex items-center justify-between w-11/12 border-t">
+          <div className="flex flex-col md:flex-row items-center justify-between w-11/12 border-t">
             <div className="card flex-row gap-2 p-5">
               <TbUsersGroup size={17} />
               <p className="text-md font-light">1 million+ active traders</p>

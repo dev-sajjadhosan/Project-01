@@ -21,11 +21,11 @@ const AuthPage = () => {
   return (
     <>
       <section
-        className={`flex justify-center items-center h-screen ${
-          pa === 'login' && 'flex-row-reverse'
+        className={`flex flex-col md:flex-row justify-center items-center md:h-screen ${
+          pa === 'login' && 'md:flex-row-reverse'
         }`}
       >
-        <div className="flex w-2/3 h-full bg-base-300 p-5 relative">
+        <div className="flex md:w-2/3 h-full bg-base-300 p-5 relative">
           <img
             src={pa === 'login' ? login : register}
             alt=""
@@ -34,7 +34,7 @@ const AuthPage = () => {
         </div>
         <div className="flex w-full h-full bg-base-100 p-5 justify-center flex-col items-center">
           {pa === 'login' ? (
-            <form className="card gap-1.5 px-15 py-7 w-lg">
+            <form className="card gap-1.5 px-1 md:px-15 py-7 w-full md:w-lg">
               <h2 className="text-2xl">Login</h2>
               <p className="text-xs font-light tracking-wide mb-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -80,7 +80,7 @@ const AuthPage = () => {
               </button>
             </form>
           ) : (
-            <form className="card gap-1.5 px-15 py-7 w-lg">
+            <form className="card gap-1.5 px-1 md:px-15 py-7 w-full md:w-lg">
               <h2 className="text-2xl">Register</h2>
               <p className="text-xs font-light tracking-wide mb-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.

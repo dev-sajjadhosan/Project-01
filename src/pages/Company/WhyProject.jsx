@@ -1,15 +1,15 @@
-// import {
-//   TbArrowForwardUpDouble,
-//   TbCash,
-//   TbCircleNumber0,
-//   TbConfetti,
-// } from 'react-icons/tb'
-// import image from '../../assets/why_me.png'
+import {
+  TbArrowForwardUpDouble,
+  TbCash,
+  TbCircleNumber0,
+  TbConfetti,
+} from 'react-icons/tb'
+import image from '../../assets/why_me.png'
 
 const WhyProject = () => {
   return (
     <>
-      {/* <div
+      <div
         className="hero min-h-[80vh]"
         style={{
           backgroundImage: `url(${image})`,
@@ -36,7 +36,7 @@ const WhyProject = () => {
           </div>
         </div>
       </div>
-      <section className="p-27 mt-27 text-center">
+      <section className="p-5 md:p-27 mt-27 text-center">
         <h2 className="text-4xl">Take your trading to the next level</h2>
         <p className="text-sm font-light tracking-wide text-gray-400 mt-1">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
@@ -45,7 +45,7 @@ const WhyProject = () => {
           minima a amet, asperiores est quam quisquam aliquid quibusdam illum
           suscipit nemo. Corrupti quasi beatae delectus.
         </p>
-        <div className="mt-13 grid grid-cols-3 gap-7">
+        <div className="mt-13 grid md:grid-cols-2 lg:grid-cols-3 gap-7">
           {[...Array(6).keys()].map((i) => (
             <div className="card border border-base-300 text-left p-9" key={i}>
               <TbConfetti size={55} />
@@ -61,7 +61,7 @@ const WhyProject = () => {
           ))}
         </div>
       </section>
-      <section className="p-27 text-center">
+      <section className="p-5 mt-27 md:p-27 text-center">
         <h2 className="text-3xl">Your money is yours. Period.</h2>
         <p className="text-sm font-light tracking-wide mt-1">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit,
@@ -73,8 +73,8 @@ const WhyProject = () => {
           <h1 className="text-3xl">How to open an demo trading account</h1>
           <div className="relative mt-11">
             <img src={image} alt="" className="rounded-2xl" />
-            <div className="absolute flex items-center bg-base-300 -bottom-19">
-              <div className="flex flex-col text-left p-9 border-r">
+            <div className="flex flex-col lg:flex-row items-center bg-base-300 lg:-translate-y-1/2">
+              <div className="flex flex-col text-left p-9 lg:border-r">
                 <TbArrowForwardUpDouble size={27} />
                 <h2 className="text-2xl mt-5">Register</h2>
                 <p className="text-xs font-light tracking-wide">
@@ -84,7 +84,7 @@ const WhyProject = () => {
                   consectetur facilis voluptatum, ad dolore at minima?
                 </p>
               </div>
-              <div className="flex flex-col text-left p-9 border-r">
+              <div className="flex flex-col text-left p-9 lg:border-r">
                 <TbCircleNumber0 size={27} />
                 <h2 className="text-2xl mt-5">Get demo balance</h2>
                 <p className="text-xs font-light tracking-wide">
@@ -108,7 +108,7 @@ const WhyProject = () => {
           </div>
         </div>
       </section>
-      <section className="mt-27 p-27 text-center">
+      <section className="mt-27 p-5 md:p-27 text-center">
         <h2 className="text-3xl">There’s a time and a place for risk</h2>
         <p className="text-sm font-light tracking-wide text-gray-400">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
@@ -116,7 +116,7 @@ const WhyProject = () => {
           officiis velit omnis sapiente voluptates magnam a rerum, provident,
           veritatis delectus in illo, repellendus aut aliquam minus?
         </p>
-      </section> */}
+      </section>
     </>
   )
 }

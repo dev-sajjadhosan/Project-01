@@ -28,9 +28,9 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-      <section className="mt-29 px-27 text-center">
+      <section className="mt-29 p-5 md:px-27 text-center">
         <h2 className="text-4xl">General inquiries</h2>
-        <div className="mt-15 grid grid-cols-2 gap-11">
+        <div className="mt-15 grid md:grid-cols-2 gap-11">
           <div className="card gap-1.5 p-11 bg-base-300 text-left">
             <TbAlertSquareRounded size={37} />
             <h2 className="text-2xl mt-7">Help Center</h2>

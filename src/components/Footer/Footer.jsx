@@ -8,12 +8,12 @@ import {
 
 const Footer = () => {
   return (
-    <div className='p-11'>
+    <div className="p-11">
       <footer className="card border-t border-gray-500 rounded-none mt-28 pt-13">
         <div className="flex justify-between items-center">
           <h2 className="text-3xl">Project 01</h2>
         </div>
-        <div className="footer flex mt-7 justify-between">
+        <div className="footer flex flex-col md:flex-row mt-7 justify-between">
           <nav>
             <h6 className="footer-title">Accounts</h6>
             <a className="link link-hover">Standard accounts</a>
@@ -70,7 +70,7 @@ const Footer = () => {
             <a className="link link-hover">MetaTrader WebTerminal</a>
           </nav>
         </div>
-        <div className="mt-11 flex items-center justify-between">
+        <div className="mt-11 flex flex-col md:flex-row items-center justify-between gap-5">
           <div className="flex items-center gap-2.5">
             <button
               className="btn btn-soft btn-info btn-circle tooltip tooltip-info"

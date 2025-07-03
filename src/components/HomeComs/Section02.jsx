@@ -96,15 +96,15 @@ const Section02 = () => {
   return (
     <>
       <section className="h-full w-full bg-[#070e20] p-17 flex flex-col items-center">
-        <h2 className="text-4xl w-1/2 text-center">
+        <h2 className="text-2xl md:text-4xl lg:w-1/2 text-center">
           Thrive in the gold, oil, indices, and crypto markets
         </h2>
-        <p className="text-md text-gray-500 font-light tracking-wide">
+        <p className="text-sm md:text-md text-gray-400 font-light tracking-wide">
           Trading conditions can make or break a strategy, that's why you need
           the best.
         </p>
-        <div className="mt-7 grid grid-cols-3 gap-3">
-          <div className="flex flex-col justify-around">
+        <div className="mt-7 grid lg:grid-cols-3 gap-3">
+          <div className="flex flex-col justify-around gap-5">
             {secionArrays.left.map((lf, i) => (
               <div
                 className="card p-3 items-center justify-center gap-1.5"
@@ -119,10 +119,10 @@ const Section02 = () => {
             ))}
           </div>
           <img src={image} width={500} alt="" />
-          <div className="flex flex-col justify-around">
+          <div className="flex flex-col justify-around gap-5">
             {secionArrays.right.map((lf, i) => (
               <div
-                className="card p-3 items-center justify-center gap-1.5"
+                className="card p-3 items-center justify-center text-center gap-1.5"
                 key={i}
               >
                 <span className="badge badge-soft badge-accent">
@@ -137,9 +137,11 @@ const Section02 = () => {
           </div>
         </div>
       </section>
-      <section className="h-full w-full bg-[#070e20] p-17 flex flex-col items-center">
-        <h2 className="text-3xl">Trade assets from global markets</h2>
-        <p className="text-md font-light tracking-wide text-gray-500">
+      <section className="h-full w-full bg-[#070e20] p-5 lg:p-17 flex flex-col items-center text-center">
+        <h2 className="text-xl md:text-3xl">
+          Trade assets from global markets
+        </h2>
+        <p className="text-sm md:text-md font-light tracking-wide text-gray-500">
           Capitalize on every opportunity with the world’s most popular assets.
         </p>
         <div className="mt-11 overflow-x-auto w-full">
@@ -160,7 +162,7 @@ const Section02 = () => {
                   <td>
                     <div className="flex items-center gap-3">
                       <div className="avatar">
-                        <div className="mask mask-squircle h-12 w-12">
+                        <div className="mask mask-squircle h-6 w-6 md:h-12 md:w-12">
                           <img
                             src="https://img.daisyui.com/images/profile/demo/2@94.webp"
                             alt="Avatar Tailwind CSS Component"

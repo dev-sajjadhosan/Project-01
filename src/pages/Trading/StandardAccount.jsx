@@ -3,15 +3,17 @@ import { TbBrandDenodo } from 'react-icons/tb'
 const StandardAccount = () => {
   return (
     <>
-      <section className="p-15 flex flex-col">
-        <h1 className="text-5xl w-md">Trading accounts: Standard</h1>
-        <p className="text-md font-light tracking-wide w-1/2 mt-2.5">
+      <section className="p-5 md:p-15 flex flex-col">
+        <h1 className="text-3xl md:text-5xl w-md">
+          Trading accounts: Standard
+        </h1>
+        <p className="text-sm md:text-md font-light tracking-wide md:w-1/2 mt-2.5">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
           quia maiores fuga facilis quod. Nam unde velit ducimus veritatis
           corporis, est architecto soluta ex sed eum voluptatibus cupiditate
           illum assumenda.
         </p>
-        <div className="mt-25 grid grid-cols-2 gap-9">
+        <div className="mt-25 grid lg:grid-cols-2 gap-9">
           <div className="card bg-base-300 rounded-2xl shadow p-11">
             <div className="card">
               <h2 className="text-2xl flex items-center gap-2">
@@ -162,9 +164,9 @@ const StandardAccount = () => {
             </tbody>
           </table>
         </div>
-        <div className="mt-25 flex items-center justify-between">
+        <div className="mt-25 flex flex-col lg:flex-row items-center justify-between gap-7">
           <h2 className="text-4xl">Frequently asked questions</h2>
-          <div className="flex flex-col bg-base-100 border border-base-300 w-3/4">
+          <div className="flex flex-col bg-base-100 border border-base-300 lg:w-3/4">
             <div className="join join-vertical bg-base-100">
               <div className="collapse collapse-arrow join-item border-base-300 border">
                 <input type="radio" name="my-accordion-4" defaultChecked />

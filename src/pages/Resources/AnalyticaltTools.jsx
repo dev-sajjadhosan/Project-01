@@ -4,8 +4,8 @@ import tradingSignals from '../../assets/trading_signals.png'
 const AnalyticaltTools = () => {
   return (
     <>
-      <section className="flex flex-col p-15">
-        <div className="card gap-1.5 w-1/2 text-left">
+      <section className="flex flex-col p-5 md:p-15">
+        <div className="card gap-1.5 md:w-1/2 text-left">
           <h1 className="text-4xl">Analytical tools</h1>
           <p className="text-sm font-light tracking-wide text-gray-400">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
@@ -14,8 +14,8 @@ const AnalyticaltTools = () => {
             modi eligendi molestias, sapiente minus quisquam.
           </p>
         </div>
-        <div className="mt-23 flex items-center justify-between">
-          <div className="card w-1/2">
+        <div className="mt-23 flex flex-col lg:flex-row gap-7 items-center justify-between">
+          <div className="card lg:w-1/2">
             <h2 className="text-3xl">Economic calendar</h2>
             <p className="text-sm font-light tracking-wide">
               Keep track of high impact news, market-moving economic events and
@@ -29,8 +29,8 @@ const AnalyticaltTools = () => {
           </div>
           <img src={economicCalendar} alt="" width={500} />
         </div>
-        <div className="mt-23 flex flex-row-reverse items-center justify-between">
-          <div className="card gap-1.5 w-1/2">
+        <div className="mt-23 flex flex-col-reverse lg:flex-row-reverse gap-7 items-center justify-between">
+          <div className="card gap-1.5 lg:w-1/2">
             <h2 className="text-3xl">Trading signals by Trading Central</h2>
             <p className="text-sm font-light tracking-wide">
               Use Trading Centrals signals to develop your strategies and plan
@@ -45,8 +45,8 @@ const AnalyticaltTools = () => {
           </div>
           <img src={tradingSignals} alt="" width={500} />
         </div>
-        <div className="mt-23 flex items-center justify-between">
-          <div className="card gap-1.5 w-1/2">
+        <div className="mt-23 flex flex-col lg:flex-row gap-7 items-center justify-between">
+          <div className="card gap-1.5 lg:w-1/2">
             <h2 className="text-3xl">Market news by FXStreet</h2>
             <p className="text-sm font-light tracking-wide">
               Stay up-to-date with a real-time feed of market news and the
@@ -63,9 +63,9 @@ const AnalyticaltTools = () => {
           </div>
           <img src={tradingSignals} alt="" width={500} />
         </div>
-        <div className="mt-25 flex items-center justify-between">
+        <div className="mt-25 flex flex-col lg:flex-row gap-7 items-center justify-between">
           <h2 className="text-4xl">Frequently asked questions</h2>
-          <div className="flex flex-col bg-base-100 border border-base-300 w-3/4">
+          <div className="flex flex-col bg-base-100 border border-base-300 lg:w-3/4">
             <div className="join join-vertical bg-base-100">
               <div className="collapse collapse-arrow join-item border-base-300 border">
                 <input type="radio" name="my-accordion-4" defaultChecked />

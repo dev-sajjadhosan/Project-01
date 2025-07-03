@@ -103,7 +103,7 @@ const Header = () => {
   const [lang, setLang] = useState('english')
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm px-9">
+      <div className="navbar bg-base-100 shadow-sm px-1 md:px-9">
         <div className="navbar-start">
           <div className="dropdown lg:hidden">
             <div
@@ -113,12 +113,12 @@ const Header = () => {
             >
               <TbMenu4 size={21} />
             </div>
-            <ul className="menu menu-horizontal px-1">
+            <ul className="dropdown-content menu w-xs px-1 z-10 bg-base-300">
               {menuArrays.map((li, i) => (
                 <li key={i}>
                   <details>
                     <summary>{li.name}</summary>
-                    <ul className="w-xs p-5 bg-base-300">
+                    <ul className="lg:w-xs p-5 bg-base-300">
                       {li?.child?.map((cd, j) => (
                         <li key={j}>
                           <Link to={cd?.path}>{cd?.name}</Link>
@@ -132,7 +132,7 @@ const Header = () => {
           </div>
           <a className="btn btn-ghost text-xl">Project 01</a>
         </div>
-        <div className="navbar-center">
+        <div className="navbar-center hidden lg:inline">
           <ul className="menu menu-horizontal px-1">
             {menuArrays.map((li, i) => (
               <li key={i}>

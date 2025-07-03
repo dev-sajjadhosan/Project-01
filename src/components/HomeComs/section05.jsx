@@ -8,7 +8,7 @@ const Section05 = () => {
       <section className="flex flex-col mt-21 items-center">
         <div className="card items-center">
           <h1 className="text-3xl">Keep up with Exness</h1>
-          <p className="text-md font-light tracking-wide text-center md:w-3/4">
+          <p className="text-sm md:text-md font-light tracking-wide text-center md:w-3/4 mt-1">
             Stay on top of our news, product and technology updates, events,
             partnerships, and more.
           </p>
@@ -16,7 +16,7 @@ const Section05 = () => {
             Read more articles
           </button>
         </div>
-        <div className="mt-11 grid grid-cols-3 gap-7 w-11/12">
+        <div className="mt-11 grid md:grid-cols-2 lg:grid-cols-3 gap-7 w-11/12">
           <div className="card bg-base-300 rounded-2xl overflow-hidden">
             <img src={image1} alt="" className="w-full" />
             <div className="p-7 flex flex-col gap-1.5">

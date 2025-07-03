@@ -5,9 +5,9 @@ import image2 from '../../assets/section04.png'
 const Section03 = () => {
   return (
     <>
-      <section className="p-15 mt-15 flex items-center">
+      <section className="p-5 lg:p-15 mt-15 flex flex-col lg:flex-row items-center">
         <img src={image} width={550} alt="" className="card" />
-        <div className="card p-15">
+        <div className="card p-5 lg:p-15 mt-13 md:mt-1">
           <TbAffiliate size={85} />
           <h2 className="text-3xl">Seize every opportunity</h2>
           <p className="text-md font-light tracking-wide mt-1.5">
@@ -29,9 +29,9 @@ const Section03 = () => {
           </ul>
         </div>
       </section>
-      <section className="p-15 mt-11 flex flex-row-reverse items-center">
+      <section className="p-5 md:p-15 mt-11 flex flex-col-reverse lg:flex-row-reverse items-center">
         <img src={image2} width={550} alt="" className="card" />
-        <div className="card p-15">
+        <div className="card p-5 md:p-15 mb-11 md:mb-1">
           <TbApiApp size={85} />
           <h2 className="text-3xl">Your security is our priority</h2>
           <p className="text-md font-light tracking-wide mt-1.5">

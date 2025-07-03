@@ -4,7 +4,7 @@ const Section04 = () => {
   return (
     <>
       <section
-        className="h-[31rem] w-full bg-base-300 p-15 flex flex-col items-start justify-center"
+        className="h-[31rem] w-full bg-base-300 p-5 lg:p-15 flex flex-col items-start justify-center"
         style={{
           backgroundImage: `url(${image})`,
           backgroundRepeat: 'no-repeat',
